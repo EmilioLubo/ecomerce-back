@@ -22,7 +22,7 @@ class DataManager {
 
   getById(id){
     try {
-      let element = this.elements.filter(el => el.id == parseInt(id))
+      let element = this.elements.find(el => el.id == parseInt(id))
       return element
     } catch (error) {
         console.log(`Product id = ${id} not found`)
